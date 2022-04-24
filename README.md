@@ -27,3 +27,5 @@ postgresql이 10버전과 14버전이 동시에 존재하고 있었어서, 14버
 
 https://stackoverflow.com/questions/40532399/unable-to-connect-to-server-for-postgres
 해당 페이지에서 10버전을 생성했을 때 포트번호를 5432로 지정해주었기 때문에 14 버전을 설치했을 때 5433으로 자동 설정되었음. 그러므로 ppostgresql.conf 파일에서 port번호를 5432로 변경해준 후 서비스에서 재시작하고나니 연결이 됨.
+
+* sql script에 깨짐 현상이 발생하는 경우에는 vscode에서 스크립트를 열어놓은 후 utf-8 포맷에서 EUC-KR 포맷으로 변경한 후 복사 붙여넣기 해준다.
